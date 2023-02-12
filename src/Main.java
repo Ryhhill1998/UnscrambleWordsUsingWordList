@@ -71,6 +71,8 @@ public class Main {
     }
 
     public static boolean letterMapsAreEqual(Map<String, Integer> map1, Map<String, Integer> map2) {
+        if (map1.size() != map2.size()) return false;
+
         for (Map.Entry<String, Integer> entrySet : map1.entrySet()) {
             String key = entrySet.getKey();
             int value = entrySet.getValue();
